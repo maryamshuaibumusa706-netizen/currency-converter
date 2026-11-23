@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Currency Converter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>💱 Currency Converter</h1>
+    <p>Convert between NGN, USD, EUR, GBP and more — instantly.</p>
+
+    <label for="amount">Amount</label>
+    <input id="amount" type="number" value="1000" min="0" />
+
+    <div class="row">
+      <div>
+        <label for="from">From</label>
+        <select id="from">
+          <option value="NGN" selected>NGN — Naira</option>
+          <option value="USD">USD — Dollar</option>
+          <option value="EUR">EUR — Euro</option>
+          <option value="GBP">GBP — Pound</option>
+        </select>
+      </div>
+      <button id="swap" title="Swap">⇄</button>
+      <div>
+        <label for="to">To</label>
+        <select id="to">
+          <option value="NGN">NGN — Naira</option>
+          <option value="USD" selected>USD — Dollar</option>
+          <option value="EUR">EUR — Euro</option>
+          <option value="GBP">GBP — Pound</option>
+        </select>
+      </div>
+    </div>
+
+    <button id="convert-btn">Convert</button>
+    <div id="result">Enter an amount and click Convert</div>
+    <p id="error-msg" class="error"></p>
+    <p class="note">Rates are demo rates for portfolio display.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
